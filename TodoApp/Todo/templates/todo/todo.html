@@ -1,0 +1,18 @@
+{% extends 'todo/base.html'%}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/todo.css'%}">
+{% endblock %}
+
+{% block content %}
+
+<ul class="list-group todo-list">
+    {% for todo in todotask %}
+       <li class="list-group-item">
+          <a href="/todo/details/{{ todo.id }}">{{ todo.title }}</a>
+          <a href="/todo/delete/{{ todo.id }}" class="btn btn-danger">delete</a>
+       </li>
+    {% endfor %}
+ </ul>
+{% endblock %}

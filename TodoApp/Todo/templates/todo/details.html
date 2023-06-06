@@ -1,0 +1,11 @@
+{% extends 'todo/base.html'%}
+
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+{% endblock %}
+
+{% block content %}
+    <p class="text-black" id="todo_title">Title: {{ todo_task.title }}</p>
+    <p id="todo_body"> {{ todo_task.task }}</p>
+{% endblock %}

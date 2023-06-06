@@ -1,0 +1,29 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #06ec98;
+    color: #ffff;
+}
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.mainbox {
+    width: 700px;
+    height: 400px;
+    margin-top: 50px;
+    margin: auto;
+    position: relative;
+    overflow-y:scroll;
+}
+
+a.addtask {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 600;
+}
